@@ -1,0 +1,40 @@
+.row_lib{
+    padding: 5vh;
+}
+
+.title_lib{
+    background-color: var(--extralight-pink-color);
+    padding: 2vh;
+    border-radius: 2vh;
+}
+
+.lib_row{
+    padding: 2vh;
+    margin:2vh;
+}
+
+.row_book_lib{
+    box-shadow: 0 0 4vh var(--extralight-orange-color);
+    border-radius: 2vh;
+}
+
+.row_book_lib .col_book img:hover {
+    
+	-webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    opacity: .5;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.img_lib{
+    margin:2vh;
+}
+
+.img_lib:hover {
+    transition: .3s ease-in-out;
+	-webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: .5;
+    cursor: pointer;
+}

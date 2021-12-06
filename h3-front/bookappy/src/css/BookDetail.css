@@ -1,0 +1,83 @@
+.img_bookDetail{
+    border-radius: 2vh;
+    padding: 2vh;
+    margin: 2vh;
+    background-color: var(--white-color);
+    border-radius: 2vh 2vh 2vh 2vh;
+    box-shadow: 0 0 4vh var(--extralight-orange-color);
+}
+
+.input_addBook{
+    transition: all .5s ease;
+    border-radius: 15px;
+    font-size: calc(5px + 2vmin);
+    transition: all 300ms ease;
+    border: none;
+    cursor: pointer;
+    font-size: 2vh;
+    background: var(--orange-gradient-color);
+    color:var(--white-color);
+    width: 90%;
+  }
+  
+.input_addBook:hover{
+color: var(--orange-color);
+background-color: var(--white-color);
+background: transparent;
+box-shadow: 0vh 0vh 1vh var(--orange-color);
+}
+
+
+.title_detail{
+    font-weight: var(--font-weight-bold);
+    font-size: 3vh;
+    color: var(--orange-color);
+}
+
+  
+.color-attributs{
+    color: var(--orange-color);
+}
+
+.subtitle{
+    margin-top:3vh;
+}
+
+.description{
+    margin-top:3vh;
+    text-align: justify;
+}
+
+hr{
+    background: var(--orange-gradient-color);
+    height: 1.5px;
+    border:none;
+}
+
+
+.button_recom{
+    color: var(--orange-color);
+    background-color: var(--white-color);
+    border-color: var(--orange-gradient-color);
+    border-radius: 1vh;
+    padding: 0.5vh;
+    border-width: 1px;
+    cursor: pointer;
+    transition: all 300ms ease;
+    width: 50%;
+}
+
+.button_recom:hover{
+    color: var(--white-color);
+    border: none;
+    background: var(--orange-gradient-color);
+}
+
+.title_recom{
+    font-size: 1.5vh;
+}
+
+.img_recom{
+    height: auto;
+    width: 7vh;
+}

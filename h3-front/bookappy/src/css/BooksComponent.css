@@ -1,0 +1,143 @@
+body{
+    z-index:2;
+    background: none !important;
+}
+
+.row_book {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1vh;
+}
+
+.row_book .col_book img:hover {
+    
+	-webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    opacity: .5;
+}
+
+.row_book .col_book img {
+
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    
+    box-shadow: 0 0 4vh var(--extralight-orange-color);
+}
+
+
+.row_component{
+padding-top: 10vh;
+}
+.row_book .col_book:hover .legend {
+    visibility: visible;
+} 
+
+.row_nav{
+    padding : 2vh;
+    box-shadow: 0 0 4vh var(--extralight-orange-color);
+    border-radius: 2vh;
+}
+
+.col_book{
+    display: grid;
+    padding:1vh;
+}
+
+  
+.col_data{
+    position: relative;  
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+    padding: 1vh;
+}
+
+.row_filter_block, .row_filter_title, .row_filter{
+    font-family: var(--font-family-text);
+    letter-spacing: 0.1em;
+}
+
+.row_filter_block{
+    box-shadow: 0 0 4vh var(--extralight-orange-color);
+}
+
+.col_field{
+    display: flex;
+    flex-wrap: wrap;
+    -ms-flex: 0 0 8.333333%;
+    flex: 0 0 8.333333%;
+    max-width: 8.333333%;
+    padding: 1vh;
+    
+}
+
+.col_field_2{
+    display: flex;
+    flex-wrap: wrap;
+    -ms-flex: 0 0 91.666667%;
+    flex: 0 0 91.666667%;
+    max-width: 91.666667%;
+    padding: 1vh;
+    padding-left: 2vh;
+}
+
+.row_field{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.icon_search{
+    height: 2vh;
+    width: 2vh;
+}
+
+.row_filter_block{
+    padding: 2vh;
+    margin: 2vh;
+    background-color: var(--white-color);
+    border-radius: 2vh 2vh 2vh 2vh;
+}
+
+.row_filter_title{
+    font-weight: var(--font-weight-bold);
+}
+
+
+.input_search{
+    display: inline-flex;
+    border-color: none;
+    border: none;
+    border-radius: 2vh;
+}
+
+.img_booksComponent{
+    max-width: 100px;
+    height: auto;
+    border-radius: 2vh;
+}
+
+.col_search{
+    position: relative;  
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+}
+
+
+.tag{
+    color:white;
+    margin:2vh;
+    border-radius: 2vh;
+    display: inline-block;
+    background: var(--orange-gradient-color);
+}

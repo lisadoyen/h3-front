@@ -1,0 +1,189 @@
+form{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-family-text);
+    font-size: 3vh;
+}
+
+.background{
+  
+  background: var(--orange-gradient-color) ;
+}
+
+.co_subtitle {
+  margin-top: 4vh;
+  border-image-source: var(--orange-gradient-color);
+  border-width: 3px;
+  border-image-slice: 1;
+  border-top:3px solid; 
+  width: 60%;  
+  display:table;
+  display:inline-block;
+}
+  .co_subtitle span {
+  background:white;
+  position:relative;
+  top:-1em;
+  padding:3vh;
+}
+
+.col_form{
+  background-color: var(--white-color);
+  border-top-left-radius: 5vh;
+  min-height: 100vh;
+}
+
+.icon_co{
+  height: 5vh;
+  width: 5vh;
+}
+
+
+.button_Co, .button_Re{
+  transition: all .5s ease;
+  border-radius: 15px;
+  margin-top: 5vh;
+  font-size: calc(5px + 2vmin);
+  transition: all 300ms ease;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  font-size: 2vh;
+  background: var(--orange-gradient-color);
+  color:var(--white-color);
+  visibility: hidden;
+  width: 20%;
+}
+  
+.button_Re:hover{
+  background: transparent;
+  color: var(--orange-color);
+  background-color: var(--white-color);
+  box-shadow: 0vh 0vh 1vh var(--orange-color);
+}
+
+.button_Co:hover{
+  color: var(--orange-color);
+  background-color: var(--white-color);
+  background: transparent;
+  box-shadow: 0vh 0vh 1vh var(--orange-color);
+}
+
+.connexion{
+  font-weight: var(--font-weight-bold);
+  font-size: calc(30px + 2vmin);
+  letter-spacing: 0.1em;
+  margin:7vh;
+}
+
+.logo_connexion{
+  margin:10vh;
+}
+
+input{
+  border-image-source: var(--orange-gradient-color);
+  border-width: 3px;
+  border-image-slice: 1;
+  border-radius: 2vh;
+  height: 5vh;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin: 2.5vh;
+  width: 50vh;
+  font-size: 2vh;
+}
+
+
+::placeholder{
+  font-size: 12px;
+}
+  label.inline {
+  display:inline
+  }
+
+@keyframes anim_co{
+  From {
+    visibility: visible;
+    opacity: 0;
+    }
+To{
+  visibility: visible;
+    opacity: 1;
+    }
+}
+
+.icon_rs{
+  margin: 3vh;
+  width: 30%;
+  display: inline-flex;
+}
+
+.connexion, .fifth, .icon_anim{
+  animation-name: anim_co;
+  animation-duration: 1000ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1
+}
+
+
+.first, .second, .third, .fourth, .fifth,
+.icon_anim{ 
+  visibility: hidden; 
+}
+@keyframes anim_connexion{
+  From{
+    
+    visibility: visible;
+      transform: translateX(10vh);
+      opacity: 0;
+      }
+  To{
+    
+    visibility: visible;
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+    
+.first, .second, .third, .fourth, .button_Co, 
+ .button_Re{  
+  animation-name: anim_connexion;
+  animation-duration: 1000ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1
+} 
+
+.first{  
+  animation-delay: 1000ms;
+} 
+
+.second{  
+  animation-delay: 1500ms;
+} 
+
+.third, .button_Co{  
+  animation-delay: 2000ms;
+} 
+
+.fourth{  
+  animation-delay: 2500ms;
+} 
+
+.button_Re{
+  animation-delay: 3000ms;
+}
+
+.fifth{  
+  animation-delay: 3500ms;
+  animation-fill-mode: forwards;
+} 
+
+.icon_anim{
+  animation-delay: 2500ms;
+  animation-fill-mode: forwards;
+}

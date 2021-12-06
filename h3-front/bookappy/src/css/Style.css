@@ -1,0 +1,41 @@
+*{
+    --font-family-text: 'Roboto';
+    --font-weight-normal: 'normal';
+    --font-weight-bold: bold;
+    --font-family-description: 'Buenard';
+    --orange-color:#FFA48D;
+    --light-orange-color: #FCB8A5;
+    --extralight-orange-color: #fcc9bc;
+    --extralight-pink-color: #f8dbd4;
+    --orange-gradient-color: linear-gradient(rgb(254, 139, 132), #FDB491);
+    --white-color:rgb(255, 255, 255);
+    --grey-color:#CCCCCC;
+    --black-color: #313131;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: var(--white-color);
+    display: table;
+    min-height: 100%;
+    height: 100%;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    position: relative;  
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+}

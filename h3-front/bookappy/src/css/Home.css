@@ -1,0 +1,10 @@
+
+.img_home, .img_home_write{
+    border-radius: 2vh;
+    padding:2vh;
+    margin: 2vh;
+}
+
+.img_home{
+    box-shadow: 0 0 4vh var(--extralight-orange-color);
+}
